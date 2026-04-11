@@ -37,7 +37,7 @@ split_inputs {
             <&zip_xy_scaler 1 16>,
             <&zip_scroll_scaler 1 5>,
             <&zip_xy_to_scroll_mapper>,
-            <&zip_report_rate_limit 8>, <&zip_xyz>;
+            <&zip_report_rate_limit 8>;
     };
 
     trackball_listener_R: trackball_listener_R {
