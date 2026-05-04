@@ -38,13 +38,15 @@
         };
 
         shiftcaps {
-            bindings = <&kp LS(CAPSLOCK)>;
+            bindings = <&kp LCAPS>;
             key-positions = <24 36 37 25>;
         };
 
         altF4 {
             bindings = <&kp LA(F4)>;
             key-positions = <3 5>;
+            timeout-ms = <200>;
+            require-prior-idle-ms = <300>;
         };
 
         tolayer1 {
@@ -68,17 +70,17 @@
         };
 
         caps2 {
-            bindings = <&kp LS(CAPSLOCK)>;
+            bindings = <&kp LS(LOCKING_CAPS)>;
             key-positions = <24 35>;
         };
 
         kana {
-            bindings = <&kp LC(INT_KANA)>;
+            bindings = <&kp LANGUAGE_1>;
             key-positions = <7 9>;
         };
 
         hanzen {
-            bindings = <&kp LC(LANG_ZENKAKUHANKAKU)>;
+            bindings = <&kp LANG2>;
             key-positions = <2 4>;
         };
 
@@ -88,7 +90,7 @@
         };
 
         left {
-            bindings = <&kp DOWN>;
+            bindings = <&kp LEFT>;
             key-positions = <2 14>;
         };
 
@@ -204,11 +206,11 @@
 
         default_layer {
             bindings = <
-&kp F1          &kp F2            &kp F3          &kp F4           &kp F5         &kp F6           &kp F7                     &kp F8     &kp F9     &kp F10    &kp F11      &kp F12
-&kp TAB         &kp Q             &kp L           &kp U            &kp F          &kp MINUS        &kp Z                      &kp W      &kp R      &kp Y      &kp P        &kp ESC
-&kp LEFT_SHIFT  &kp E             &kp I           &kp A            &kp O          &kp COMMA        &kp K                      &kp T      &kp N      &kp S      &kp H        &kp RIGHT_SHIFT
-&kp LCTRL       &kp INT_MUHENKAN  &kp X           &kp C            &kp V          &kp DOT          &kp G                      &kp M      &kp M      &kp J      &kp B        &kp DEL
-&kp LEFT_GUI    &kp LEFT_ALT      &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_GUI    &lt 1 LANG_ZENKAKUHANKAKU  &kp SPACE  &kp LCTRL  &kp RCTRL  &lt 2 ENTER  &kp BACKSPACE
+&kp F1          &kp F2        &kp F3          &kp F4           &kp F5         &kp F6           &kp F7       &kp F8     &kp F9     &kp F10    &kp F11      &kp F12
+&kp TAB         &kp Q         &kp L           &kp U            &kp F          &kp MINUS        &kp Z        &kp W      &kp R      &kp Y      &kp P        &kp ESC
+&kp LEFT_SHIFT  &kp E         &kp I           &kp A            &kp O          &kp COMMA        &kp K        &kp T      &kp N      &kp S      &kp H        &kp RIGHT_SHIFT
+&kp LCTRL       &kp LEFT_ALT  &kp X           &kp C            &kp V          &kp DOT          &kp G        &kp D      &kp M      &kp J      &kp B        &kp DEL
+&kp LEFT_GUI    &kp LEFT_ALT  &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_GUI    &lt 1 SPACE  &kp SPACE  &kp LCTRL  &kp RCTRL  &lt 2 ENTER  &kp BACKSPACE
             >;
         };
 
