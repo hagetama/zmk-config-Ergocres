@@ -156,32 +156,32 @@
             label = "TO_LAYER_0";
         };
 
-        kakko2: new_macro {
+        kakko2: kakko2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp ENTER &kp LEFT>;
-            label = "NEW_MACRO";
+            label = "kakko2";
         };
 
-        kakko: new_macro {
+        kakko: kakko {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp ENTER &kp LEFT>;
-            label = "NEW_MACRO";
+            label = "kakko";
         };
 
-        yajirushikakko: new_macro {
+        yajirushikakko: yajirushikakko {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LESS_THAN &kp GREATER_THAN &kp ENTER &kp LEFT>;
-            label = "NEW_MACRO";
+            label = "yajirushikakko";
         };
 
-        double: new_macro {
+        double: double {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp ENTER &kp LEFT>;
-            label = "NEW_MACRO";
+            label = "double";
         };
     };
 
