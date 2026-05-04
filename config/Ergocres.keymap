@@ -148,6 +148,26 @@
             bindings = <&tog 2>;
             key-positions = <54 55>;
         };
+
+        leftshift {
+            bindings = <&kp LS(LEFT)>;
+            key-positions = <37 31>;
+        };
+
+        sitashift {
+            bindings = <&kp LS(DOWN)>;
+            key-positions = <37 32>;
+        };
+
+        upshift {
+            bindings = <&kp LS(UP)>;
+            key-positions = <37 20>;
+        };
+
+        rightshift {
+            bindings = <&kp LS(RIGHT)>;
+            key-positions = <37 33>;
+        };
     };
 
     macros {
@@ -199,6 +219,27 @@
             bindings = <&kp LEFT_SHIFT &kp CAPSLOCK>;
             label = "OOMOJI";
         };
+
+        fiveback: fiveback {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
+            label = "FIVEBACK";
+        };
+
+        threeleft: threeleft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT &kp LEFT &kp LEFT>;
+            label = "THREELEFT";
+        };
+
+        rightthree: rightthree {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT &kp RIGHT &kp RIGHT>;
+            label = "RIGHTTHREE";
+        };
     };
 
     lt_to_layer_0: lt_to_layer_0 {
@@ -223,38 +264,38 @@
 &kp F1          &kp F2        &kp F3          &kp F4           &kp F5         &kp F6           &kp F7       &kp F8     &kp F9     &kp F10    &kp F11      &kp F12
 &kp TAB         &kp Q         &kp L           &kp U            &kp F          &kp MINUS        &kp Z        &kp W      &kp R      &kp Y      &kp P        &kp ESC
 &kp LEFT_SHIFT  &kp E         &kp I           &kp A            &kp O          &kp COMMA        &kp K        &kp T      &kp N      &kp S      &kp H        &kp RIGHT_SHIFT
-&kp LCTRL       &kp LEFT_ALT  &kp X           &kp C            &kp V          &kp DOT          &kp G        &kp D      &kp M      &kp J      &kp B        &kp DEL
+&kp LCTRL       &mo 3         &kp X           &kp C            &kp V          &kp DOT          &kp G        &kp D      &kp M      &kp J      &kp B        &kp DEL
 &kp LEFT_GUI    &kp LEFT_ALT  &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_GUI    &lt 1 SPACE  &kp SPACE  &kp LCTRL  &kp RCTRL  &lt 2 ENTER  &kp BACKSPACE
             >;
         };
 
         layer_1 {
             bindings = <
-&kp F1              &kp F2  &kp F3          &kp F4          &kp F5           &kp F6                &kp F7        &kp F8        &kp F9              &kp F10             &kp F11          &kp F12
-&trans              &trans  &trans          &kp UP_ARROW    &trans           &lt_to_layer_0 0 0    &kp N7        &kp N8        &kp N9              &kp ASTERISK        &kp PLUS         &kp CARET
-&trans              &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans                &kp NUMBER_4  &kp N5        &kp NUMBER_6        &kp SLASH           &kp KP_SUBTRACT  &kp COMMA
-&trans              &trans  &trans          &trans          &trans           &kp N0                &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3        &kp DOT             &kp KP_COMMA     &kp KP_EQUAL
-&lt_to_layer_0 0 0  &trans  &trans          &trans          &trans           &lt_to_layer_0 0 0    &kp SPACE     &trans        &lt_to_layer_0 0 0  &lt_to_layer_0 0 0  &kp ENTER        &kp BACKSPACE
+&kp F1  &kp F2  &kp F3          &kp F4          &kp F5           &kp F6                &kp F7        &kp F8        &kp F9        &kp F10       &kp F11          &kp F12
+&trans  &trans  &trans          &kp UP_ARROW    &trans           &lt_to_layer_0 0 0    &kp N7        &kp N8        &kp N9        &kp ASTERISK  &kp PLUS         &kp CARET
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans                &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH     &kp KP_SUBTRACT  &kp COMMA
+&trans  &trans  &trans          &trans          &trans           &kp N0                &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT       &kp KP_COMMA     &kp KP_EQUAL
+&to 0   &trans  &trans          &trans          &trans           &to 0                 &kp SPACE     &trans        &to 0         &to 0         &kp ENTER        &kp BACKSPACE
             >;
         };
 
         layer_4 {
             bindings = <
-&trans      &kp GRAVE             &trans             &trans           &kt LESS_THAN         &trans       &trans              &kp GREATER_THAN       &trans        &trans         &kp DOLLAR        &trans
-&double     &kp LESS_THAN         &kp PERCENT        &kp AT_SIGN      &kp LEFT_BRACKET      &kp MINUS    &kp PLUS            &kp RIGHT_BRACKET      &kp HASH      &kp AMPERSAND  &kp GREATER_THAN  &double
-&kagikakko  &kp UNDER             &kp CARET          &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp SLASH    &kp ASTERISK        &kp RIGHT_PARENTHESIS  &kp QUESTION  &kp TILDE      &kp PIPE          &kakko
-&kakko2     &kp NON_US_BACKSLASH  &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp LEFT_BRACE        &kp CARET    &kp EQUAL           &kp RIGHT_BRACE        &kp COLON     &kp SQT        &kp BACKSLASH     &yajirushikakko
-&trans      &trans                &trans             &trans           &trans                &trans       &lt_to_layer_0 0 0  &trans                 &trans        &trans         &trans            &lt_to_layer_0 0 0
+&trans      &kp GRAVE             &trans             &trans           &kt LESS_THAN         &trans       &trans        &kp GREATER_THAN       &trans        &trans         &kp DOLLAR        &trans
+&double     &kp LESS_THAN         &kp PERCENT        &kp AT_SIGN      &kp LEFT_BRACKET      &kp MINUS    &kp PLUS      &kp RIGHT_BRACKET      &kp HASH      &kp AMPERSAND  &kp GREATER_THAN  &double
+&kagikakko  &kp UNDER             &kp CARET          &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp SLASH    &kp ASTERISK  &kp RIGHT_PARENTHESIS  &kp QUESTION  &kp TILDE      &kp PIPE          &kakko
+&kakko2     &kp NON_US_BACKSLASH  &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp LEFT_BRACE        &kp CARET    &kp EQUAL     &kp RIGHT_BRACE        &kp COLON     &kp SQT        &kp BACKSLASH     &yajirushikakko
+&trans      &trans                &trans             &trans           &trans                &trans       &to 0         &trans                 &trans        &trans         &trans            &to 0
             >;
         };
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans      &trans       &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &kp UP      &trans       &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT   &kp DOWN    &kp RIGHT    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &fiveback  &threeleft  &rightthree  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans      &trans       &trans  &kp RIGHT_SHIFT
             >;
         };
 
