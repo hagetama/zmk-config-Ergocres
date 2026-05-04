@@ -38,12 +38,12 @@
         };
 
         shiftcaps {
-            bindings = <&kp LCAPS>;
+            bindings = <&oomoji>;
             key-positions = <24 36 37 25>;
         };
 
         altF4 {
-            bindings = <&kp LA(F4)>;
+            bindings = <&altF4>;
             key-positions = <3 5>;
             timeout-ms = <200>;
             require-prior-idle-ms = <300>;
@@ -70,7 +70,7 @@
         };
 
         caps2 {
-            bindings = <&kp LS(LOCKING_CAPS)>;
+            bindings = <&oomoji>;
             key-positions = <24 35>;
         };
 
@@ -184,6 +184,20 @@
             #binding-cells = <0>;
             bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES &kp ENTER &kp LEFT>;
             label = "double";
+        };
+
+        altF4: altF4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp F4>;
+            label = "ALTF4";
+        };
+
+        oomoji: oomoji {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT &kp CAPSLOCK>;
+            label = "OOMOJI";
         };
     };
 
