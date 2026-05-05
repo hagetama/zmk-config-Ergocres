@@ -303,11 +303,11 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans      &trans       &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &kp UP      &trans       &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT   &kp DOWN    &kp RIGHT    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &fiveback  &threeleft  &rightthree  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans      &trans       &trans  &kp RIGHT_SHIFT
+&trans  &trans  &trans  &trans     &trans          &trans            &trans  &trans     &trans      &trans       &trans          &trans
+&trans  &trans  &trans  &trans     &trans          &trans            &trans  &trans     &kp UP      &trans       &trans          &trans
+&trans  &trans  &trans  &mkp LCLK  &mkp LCLK       &mkp RCLK         &trans  &kp LEFT   &kp DOWN    &kp RIGHT    &trans          &trans
+&trans  &trans  &trans  &mkp LCLK  &mkp LCLK       &mkp RCLK         &trans  &fiveback  &threeleft  &rightthree  &trans          &trans
+&trans  &trans  &trans  &trans     &kp LEFT_SHIFT  &kp LEFT_SHIFT    &trans  &trans     &trans      &trans       &kp LEFT_SHIFT  &kp RIGHT_SHIFT
             >;
         };
 
