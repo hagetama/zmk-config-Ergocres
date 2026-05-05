@@ -273,11 +273,11 @@
 
         default_layer {
             bindings = <
-&kp F1          &kp F2        &kp F3          &kp F4           &kp F5         &kp F6        &kp F7       &kp F8     &kp F9     &kp F10    &kp F11      &kp F12
-&kp TAB         &kp Q         &kp L           &kp U            &kp F          &kp MINUS     &kp Z        &kp W      &kp R      &kp Y      &kp P        &kp ESC
-&kp LEFT_SHIFT  &kp E         &kp I           &kp A            &kp O          &kp COMMA     &kp K        &kp T      &kp N      &kp S      &kp H        &kp RIGHT_SHIFT
-&kp LCTRL       &mo 3         &kp X           &kp C            &kp V          &kp DOT       &kp G        &kp D      &kp M      &kp J      &kp B        &kp DEL
-&kp LEFT_GUI    &kp LEFT_ALT  &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &saihenkan    &lt 1 SPACE  &kp SPACE  &kp LCTRL  &kp RCTRL  &lt 2 ENTER  &kp BACKSPACE
+&kp F1          &kp F2        &kp F3          &kp F4           &kp F5         &kp F6        &kp F7       &kp F8       &kp F9     &kp F10    &kp F11      &kp F12
+&kp TAB         &kp Q         &kp L           &kp U            &kp F          &kp MINUS     &kp Z        &kp W        &kp R      &kp Y      &kp P        &kp ESC
+&kp LEFT_SHIFT  &kp E         &kp I           &kp A            &kp O          &kp COMMA     &kp K        &kp T        &kp N      &kp S      &kp H        &kp RIGHT_SHIFT
+&kp LCTRL       &mo 3         &kp X           &kp C            &kp V          &kp DOT       &kp G        &kp D        &kp M      &kp J      &kp B        &kp DEL
+&kp LEFT_GUI    &kp LEFT_ALT  &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &saihenkan    &lt 1 SPACE  &lt 2 SPACE  &kp LCTRL  &kp RCTRL  &lt 2 ENTER  &kp BACKSPACE
             >;
         };
 
