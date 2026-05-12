@@ -14,27 +14,27 @@
 
         home {
             bindings = <&kp HOME>;
-            key-positions = <26 28>;
+            key-positions = <31 33>;
         };
 
         end {
             bindings = <&kp END>;
-            key-positions = <38 40>;
+            key-positions = <43 45>;
         };
 
         pgup {
             bindings = <&kp PAGE_UP>;
-            key-positions = <31 33>;
+            key-positions = <26 28>;
         };
 
         pgdn {
             bindings = <&kp PAGE_DOWN>;
-            key-positions = <43 45>;
+            key-positions = <38 40>;
         };
 
         prtsc {
             bindings = <&kp PRINTSCREEN>;
-            key-positions = <7 8 9>;
+            key-positions = <19 20 21>;
         };
 
         shiftcaps {
@@ -60,12 +60,12 @@
         };
 
         Rtolayer1 {
-            bindings = <&mo 1>;
+            bindings = <&kp ENTER>;
             key-positions = <53 59>;
         };
 
         rtolayer2 {
-            bindings = <&mo 2>;
+            bindings = <&kp BACKSPACE>;
             key-positions = <52 58>;
         };
 
@@ -76,12 +76,12 @@
 
         kana {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <7 9>;
+            key-positions = <19 21>;
         };
 
         hanzen {
             bindings = <&kp LANG2>;
-            key-positions = <2 4>;
+            key-positions = <14 16>;
         };
 
         right {
@@ -144,33 +144,13 @@
             key-positions = <54 55>;
         };
 
-        leftshift {
-            bindings = <&kp LS(LEFT)>;
-            key-positions = <37 31>;
-        };
-
-        sitashift {
-            bindings = <&kp LS(DOWN)>;
-            key-positions = <37 32>;
-        };
-
-        upshift {
-            bindings = <&kp LS(UP)>;
-            key-positions = <37 20>;
-        };
-
-        rightshift {
-            bindings = <&kp LS(RIGHT)>;
-            key-positions = <37 33>;
-        };
-
         enter2 {
-            bindings = <&kp ENTER>;
+            bindings = <&kp BACKSPACE>;
             key-positions = <31 43>;
         };
 
         enter3 {
-            bindings = <&kp ENTER>;
+            bindings = <&kp BACKSPACE>;
             key-positions = <30 42>;
         };
     };
@@ -273,11 +253,11 @@
 
         default_layer {
             bindings = <
-&kp F1          &kp F2        &kp F3          &kp F4           &kp F5         &kp F6        &kp F7       &kp F8       &kp F9     &kp F10    &kp F11      &kp F12
-&kp TAB         &kp Q         &kp L           &kp U            &kp F          &kp MINUS     &kp Z        &kp W        &kp R      &kp Y      &kp P        &kp ESC
-&kp LEFT_SHIFT  &kp E         &kp I           &kp A            &kp O          &kp COMMA     &kp K        &kp T        &kp N      &kp S      &kp H        &kp RIGHT_SHIFT
-&kp LCTRL       &mo 3         &kp X           &kp C            &kp V          &kp DOT       &kp G        &kp D        &kp M      &kp J      &kp B        &kp DEL
-&kp LEFT_GUI    &kp LEFT_ALT  &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &saihenkan    &lt 1 SPACE  &lt 2 SPACE  &kp LCTRL  &kp RCTRL  &lt 2 ENTER  &kp BACKSPACE
+&lt 1 F1        &lt 2 F2      &kp F3          &kp F4      &kp F5         &kp F6           &kp F7       &kp F8       &kp F9     &kp F10    &kp F11          &kp F12
+&kp TAB         &kp Q         &kp E           &kp U       &kp F          &kp MINUS        &kp Z        &kp W        &kp R      &kp Y      &kp P            &kp ESC
+&kp LEFT_SHIFT  &kp L         &kp I           &kp A       &kp O          &kp COMMA        &kp K        &kp T        &kp N      &kp S      &kp H            &kp RIGHT_SHIFT
+&kp LCTRL       &mo 3         &kp X           &kp C       &kp V          &kp DOT          &kp G        &kp D        &kp M      &kp J      &kp B            &kp DEL
+&kp LEFT_GUI    &kp LEFT_ALT  &kp LEFT_SHIFT  &saihenkan  &kp RIGHT_ALT  &kp RIGHT_GUI    &lt 1 SPACE  &lt 2 SPACE  &kp LCTRL  &kp RCTRL  &lt 2 BACKSPACE  &lt 1 ENTER
             >;
         };
 
@@ -297,7 +277,7 @@
 &double     &kp LESS_THAN         &kp PERCENT        &kp AT_SIGN      &kp LEFT_BRACKET      &kp MINUS    &kp PLUS      &kp RIGHT_BRACKET      &kp HASH      &kp AMPERSAND  &kp GREATER_THAN  &double
 &kagikakko  &kp UNDER             &kp CARET          &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp SLASH    &kp ASTERISK  &kp RIGHT_PARENTHESIS  &kp QUESTION  &kp TILDE      &kp PIPE          &kakko
 &kakko2     &kp NON_US_BACKSLASH  &kp DOUBLE_QUOTES  &kp SEMICOLON    &kp LEFT_BRACE        &kp CARET    &kp EQUAL     &kp RIGHT_BRACE        &kp COLON     &kp SQT        &kp BACKSLASH     &yajirushikakko
-&trans      &trans                &trans             &trans           &trans                &trans       &to 0         &trans                 &trans        &trans         &trans            &to 0
+&to 0       &trans                &trans             &trans           &trans                &to 0        &kp SPACE     &trans                 &trans        &trans         &trans            &kp ENTER
             >;
         };
 
