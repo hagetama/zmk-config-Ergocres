@@ -101,7 +101,7 @@
 
         down {
             bindings = <&kp DOWN>;
-            key-positions = <1 13>;
+            key-positions = <15 27>;
         };
 
         kagikakko {
